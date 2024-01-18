@@ -1,0 +1,37 @@
+ <style>
+        body {
+            background: linear-gradient(to bottom left, #bce9d2 29%, #ade6da 83%);
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 30px;
+            size: 100px;
+        }
+
+        .login-form {
+            background-color: #ffffff;
+            padding: 50px;
+            margin-top: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label
+        {
+            margin-top: 50px;
+            color: rgb(11, 46, 75);
+        }
+        h1
+        {
+            
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 10px;
+            color: #fff;
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(15, 14, 14, 0.9);
+            background: linear-gradient(45deg, #033d64, #3a7784);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>

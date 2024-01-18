@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+        background: linear-gradient(to bottom left, #69bc91 29%, #86dbc9 83%);
+         margin-bottom: 50px;
+          
+     }
+
+     .login-container {
+         max-width: 400px;
+         margin: auto;
+         margin-top: 30px;
+         size: 100px;
+     }
+
+     .login-form {
+       
+         padding: 50px;
+         margin-top: 60px;
+         border-radius: 10px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+         background-color: rgba(255, 255, 255, 0.5);
+     }
+     label
+     {
+         margin-top: 50px;
+         color: rgb(11, 46, 75);
+     }
+     h1
+     {
+         
+         font-family: 'Times New Roman', Times, serif;
+         margin-top: 10px;
+         color: #fff;
+         font-size: 4em;
+         text-shadow: 2px 2px 4px rgba(15, 14, 14, 0.6);
+         background: linear-gradient(45deg, #022238, #3a7784);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+     }
+</style>
+    
+<title>Login Form</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <br><br>
+    <center>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+
+    
+        <img src="KGH_new logo.jpg" height="100" width="100"> <h1><i><b><u>E-Bachat Gatt App</u></b></i></h1>
+        
+
+    </div>
+    <div class="col-sm-3"></div>
+    </center>
+    <center>
+       
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+    
+       <form action="connect.php" method="post">
+         <div class="login-form">
+            <h2 class="text-center mb-4"><b><u>Lo</u>g-<u>in Pa</u>ge</b></h2>
+                
+            <div class="form-group">
+                
+                <label for="leader" class="radio-inline" ><input type="radio" name="person_type" value="L" id="Leader"><b>Log-in as leader</b></label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                <label for="member" class="radio-inline" ><input type="radio" name="person_type" value="M" id="Member"><b>Log-in as member</b></label>
+                <br><br>
+                <input type="text" class="form-control" id="username" name="username" value="" placeholder="Phone number, Username, or Email" required>
+            </div>
+                <br>
+            <div class="form-group">
+                
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+                <br>
+
+            <button type="Login" class="btn btn-primary btn-block">Login</button>
+            <div class="form-group">
+                <br>
+                ____________________or____________________
+                
+                <br>
+                <br>
+                <button type="Signup" onclick="signup.html" class="btn btn-primary btn-block">Sign-Up</button>
+                <br><br>
+            </div>
+                 <a href="Forgetpass.html" ><b><u>Forgot Password?</u> </b></a>
+             </center>
+             </div>
+            </div>
+        </form>
+     </div>
+    <div class="col-sm-3"></div>
+       
+</body>
+</html>

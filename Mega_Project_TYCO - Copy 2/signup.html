@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Bachat Gatt Sign Up</title>
+  <script src="validation.js"></script>
+</head>
+<body>
+  <style>
+    body
+     {
+        background: linear-gradient(to bottom left, #69bc91 29%, #86dbc9 83%);
+         margin-bottom: 50px;
+          font-family: Arial, sans-serif;
+          margin-bottom: 300px;
+    }
+
+    .container 
+    {
+      background-color: rgba(255, 255, 255, 0.0);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px;
+      background-color: lightgray;
+      margin-top: 100px;
+    }
+
+    .form-group 
+    {
+      margin-bottom: 20px;
+    }
+
+    label 
+    {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] 
+    {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button
+     {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover
+     {
+      background-color: #45a049;
+    }
+  </style>
+
+  <div class="container">
+    <h1><u>Si</u>gn Up for E-Bachat Gatt</h1>
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" onkeypress="javascript :return isAlphanumeric(event)" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"  required>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
