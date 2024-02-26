@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Content page</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    </head>
+    <style>
+        body
+              {
+      /*            background-color: rgb(84, 73, 95);*/
+                  background-image:  url('OIP (2).jpg');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+      
+              }
+              .container
+              {
+                  padding: 20px;
+                  margin-top: 50px;
+                  margin-left: 10px;
+                 /* margin-right: 30px;*/
+                   background-color: rgba(139, 135, 135, 0.63);
+      /*           background-color: #c3a5d9;*/
+                  box-shadow: rgb(125, 125, 126) 1px 1px;
+              }
+              .table table-bordered
+              {
+                border:10px;
+              }
+              
+      </style>
+      <div class="row">
+          <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+          <div class="container">
+            <h2 style=" color:wheat;">Members Status</h2>
+         <form action="contentpage.html" method="post">
+         <div class="row">
+           <div class="col-sm-7"></div>
+           <div class="col-sm-3">
+              <input type="text" name="txt_cname" class="" placeholder="Type to search.." class="form-control" style="border-radius: 2px;">
+                </div>
+        
+          <div class="col-sm-2">
+             
+         <input type="submit" name="btnserach" value="Search" class="btn btn-warning" class="form-control">
+         </div>
+         </div>
+         </form>
+         <br>
+    <body>
+        <table class="table table-bordered" style="background-color:rgb(245, 244, 243);">
+            <thead>
+             <tr>
+               <th scope="col">SR.</th>
+               <th scope="col">Date</th>
+               <th scope="col">Member Name</th>
+               <th scope="col">Installment</th>
+               <th scope="col">Rate of Interest</th>
+               <th scope="col">Time span</th>
+               <th scope="col"> Total Ammount</th>
+               <th scope="col"> Loan</th>
+               <th scope="col"> Penalty</th>
+             </tr>
+            </thead>
+
+   // coloumns
+    echo '<tr>
+    <form action="category_list.php" method="POST">
+      <th scope="row">'.$i++.'</th>
+      <input type="hidden" name="txt_id" value="'.$row['id'].'">
+      <td><input type="date" name="txt_cdate" value="'.$row['cdate'].'" class="form-control"> </td>
+      <td><input type="text" name="txt_cname" value="'.$row['cname'].'" class="form-control"> </td>
+      <td><input type="text" name="txt_desc" value="'.$row['cdesc'].'" class="form-control"> </td>
+      <td><input type="text" name="txt_rate" value="'.$row[crate'].'" class="form-control"></td>
+     <td><input type="text" name="txt_time" value="'.$row[ctime'].'" class="form-control"></td>
+     <td><input type="text" name="txt_ammount" value="'.$row[cammount'].'" class="form-control"></td>
+     <td><input type="text" name="txt_loan" value="'.$row[cloan'].'" class="form-control"></td>
+     <td><input type="text" name="txt_ penalty" value="'.$row[cpenalty'].'" class="form-control"></td>
+    </tr>';
+   
+  <!-- Buttons for update,delete,and save -->
+   </tbody>
+    </table>
+    <div class="row">
+      <div class="col-sm-8"></div>
+      <div class="col-sm-4">
+          <input type="submit" name="" class="btn btn-success" value="Update">
+          <input type="submit" name="" class="btn btn-danger" value="Delete">
+          <input type="submit" name="" class="btn btn-primary" value="Save">
+      </div>
+  </div>
+
+    </div>
+    </div>
+    <div class="col-sm-10"></div>
+</div>
+
+<script type="text/javascript">
+  if()
+  alert"Updated successfully !!";
+</script>
+
+        </table>
+    </body>
+</html>
